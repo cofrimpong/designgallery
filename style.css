@@ -454,3 +454,58 @@ body.dark footer {
     border-top-color: var(--border-dark);
     color: #9ca3af;
 }
+/* Timeline Layout */
+.timeline {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    border-left: 2px solid rgba(148, 163, 184, 0.4);
+    padding-left: 1.5rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 0.5rem;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.76rem;
+    top: 0.35rem;
+    width: 12px;
+    height: 12px;
+    background: var(--fjord);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(127, 180, 214, 0.25);
+}
+
+.timeline-year {
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.9;
+}
+
+.timeline-content p {
+    margin: 0;
+    line-height: 1.55;
+    opacity: 0.85;
+}
+
+/* Dark mode adjustments */
+body.dark .timeline {
+    border-left-color: rgba(100, 116, 139, 0.4);
+}
+
+body.dark .timeline-item::before {
+    background: var(--sage);
+    box-shadow: 0 0 0 4px rgba(184, 216, 198, 0.25);
+}
+
+body.dark .timeline-year,
+body.dark .timeline-content p {
+    color: var(--text-dark);
+    opacity: 0.95;
+}
