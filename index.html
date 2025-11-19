@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nordic Minimalism – History</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
@@ -14,9 +14,11 @@
         <span>calm grids · arctic light · functional clarity</span>
     </div>
 
-    <div class="menu-toggle"><span></span><span></span><span></span></div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span><span></span><span></span>
+    </div>
 
-    <nav>
+    <nav id="nav-links">
         <a href="index.html">History</a>
         <a href="principles.html">Principles</a>
         <a href="gallery.html">Gallery</a>
@@ -25,58 +27,84 @@
     </nav>
 </header>
 
-<section class="hero">
-    <div class="hero-text">
-        <div class="hero-kicker">Design lineage · Scandinavian roots</div>
-        <h2>Minimal surfaces, maximum clarity.</h2>
-        <p>
-            Nordic Minimalism combines light, geometry, and quiet color to create
-            interfaces that feel calm, intentional, and easy to live with. This site
-            explores how that tradition translates into modern web design.
-        </p>
+<section class="page">
+    <h2>History of Nordic Minimalism</h2>
+    <p>
+        Nordic Minimalism grew from Scandinavian design traditions focused on clarity,
+        honesty in materials, light, and simplicity. Over the decades, the style evolved
+        through functionalism, democratic design, environmental thinking, and finally
+        into modern digital expression through clean interfaces and generous white space.
+    </p>
 
-        <div class="hero-actions">
-            <button class="btn-primary" onclick="location.href='gallery.html'">
-                View style gallery
-            </button>
-            <div class="pill">
-                ❄️ Inspired by Nordic interiors
+    <h2>Timeline of Nordic Minimalism</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-year">1900–1920</div>
+            <div class="timeline-content">
+                <p>
+                    Early Nordic design begins forming as designers move away from heavy historic
+                    styles, embracing natural materials and simpler forms.
+                </p>
             </div>
         </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1920s–1930s</div>
+            <div class="timeline-content">
+                <p>
+                    Functionalism and European Modernism influence Scandinavia. The 1930 Stockholm
+                    Exhibition promotes clean lines, honesty in materials, and functional everyday design.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1940s–1960s</div>
+            <div class="timeline-content">
+                <p>
+                    The Golden Age of Scandinavian Design emerges. Designers like Alvar Aalto and
+                    Arne Jacobsen popularize minimal, organic furniture made from wood and natural materials.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1970s–1980s</div>
+            <div class="timeline-content">
+                <p>
+                    Nordic design shifts toward democratic and affordable products. Function, simplicity,
+                    and environmental awareness guide mass-produced everyday items.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">1990s–2000s</div>
+            <div class="timeline-content">
+                <p>
+                    Minimal interiors—white walls, pale wood, and clutter-free spaces—shape modern Scandinavian
+                    aesthetics. Early digital design adopts similar clean layouts and calm visuals.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-year">2010s–Today</div>
+            <div class="timeline-content">
+                <p>
+                    “New Nordic” expands into digital products. Websites and apps embrace airy white space,
+                    soft gradients, simple grids, and user-friendly minimalism.
+                </p>
+            </div>
+        </div>
+
     </div>
-
-    <aside class="hero-panel">
-        <div class="hero-tag">Visual snapshot</div>
-        <div class="hero-panel-main">
-            Clean typography, muted blue accents, and generous white space echo the
-            balance found in Scandinavian furniture, interiors, and product design.
-        </div>
-        <div class="hero-stat-row">
-            <div class="hero-stat">
-                <strong>1920s–Now</strong><br>Scandinavian design lineage
-            </div>
-            <div class="hero-stat">
-                <strong>3 Pillars</strong><br>Function · Light · Calm
-            </div>
-        </div>
-    </aside>
 </section>
 
-<main class="page">
-    <h2>History & Origins</h2>
-    <p>
-        Nordic Minimalism emerged in the early 20th century within Scandinavian countries
-        such as Sweden, Denmark, Norway, and Finland. Designers responded to industrial
-        change by emphasizing objects and spaces that were practical, honest, and
-        comfortable to use. Their work relied on natural materials, soft light, and
-        simple forms. As the style spread into global architecture and digital products,
-        the core idea remained: reduce visual noise so that people can focus on what
-        matters.
-    </p>
-</main>
-
 <footer>
-    <p>Swiss Design Lineage Vibe Coding · Nordic Minimalism</p>
+    Swiss Design Lineage Vibe Coding · Nordic Minimalism
 </footer>
 
 <script src="script.js"></script>
